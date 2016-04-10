@@ -1,7 +1,7 @@
 <?php 
 $pull = shell_exec('git pull');
 echo $pull;
-echo $phpinfo;
+phpinfo();
 ?>
 
 asdasdasd
