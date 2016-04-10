@@ -36,8 +36,6 @@
 				Test3<br />
 				Test4<br />
 				Test5<br />
-				Test6<br />
-				Test7<br />
 			</div>
 		</div>
 		
