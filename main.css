@@ -88,6 +88,7 @@ body {
 	right: 0;
 	height: 300px;
 	width: 250px;
+	vertical-align: text-bottom;
 	padding: 0px;
 	margin: 0px;
 }
