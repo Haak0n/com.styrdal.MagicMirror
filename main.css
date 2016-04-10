@@ -100,6 +100,11 @@ body {
 	bottom: 0;
 }
 
+.calendarcon {
+	position: absolute;
+	bottom: 0;
+}
+
 .topic {
 	font-size: 11px;
 }
