@@ -17,7 +17,8 @@ function displayFeed(result) {
 	if (!result.error) {
 		var feedEntries = result.feed.entries;		
 		for (var i=0; i < feedEntries.length; i++) {
-			html += '<a class="topic">' + feedEntries[i].title + '</a><br />';
+			html += '<a class="topic">' + feedEntries[i].title + '</a>';
+			html += '<a class="newsdate"> - ' + moment(feedEntries[i].publishedDate).format("DD/MM/YY mm:HH") + '</a><br />';
 			html += '<a class="text">' + feedEntries[i].contentSnippet + '<a/><p />';
 		}
 		div.innerHTML=html;

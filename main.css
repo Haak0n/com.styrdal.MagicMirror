@@ -94,12 +94,16 @@ body {
 
 .topic {
 	font-size: 11px;
-	text-decoration: underline;
 }
 
 .text {
 	font-size: 9px;
 	opacity: 0.8;
+}
+
+.newsdate {
+	font-size: 9px;
+	opacity: 0.7;
 }
 
 /* #ID */
