@@ -73,7 +73,7 @@ body {
 	position: absolute;
 	font-size: 10px;
 	bottom: 0;
-	height: 300px;
+	height: 220px;
 	width: 350px;
 	padding: 0px;
 	margin: 0px;
@@ -86,7 +86,7 @@ body {
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	height: 300px;
+	height: 220px;
 	width: 250px;
 	padding: 0px;
 	margin: 0px;
@@ -97,7 +97,6 @@ body {
 	border-style: solid;
 	border-width: 0px;
 	border-color: #FFFFFF;
-	bottom: 0;
 }
 
 .calendarcon {
@@ -105,7 +104,14 @@ body {
 	border-width: 0px;
 	border-color: #FFFFFF;
 	position: absolute;
-	bottom: 0;
+	right: 0;
+}
+
+.weathercon {
+	border-style: solid;
+	border-width: 0px;
+	border-color: #FFFFFF;
+	position: absolute;
 	right: 0;
 }
 
@@ -121,6 +127,11 @@ body {
 .newsdate {
 	font-size: 9px;
 	opacity: 0.7;
+}
+
+.eventtime {
+	font-size: 9px;
+	vertical-align: bottom;
 }
 
 /* #ID */

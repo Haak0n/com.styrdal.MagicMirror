@@ -25,8 +25,10 @@
 				
 			</div>
 			<div class="topright">
-				<div id="temp"></div><br />
-				<div id="forecast"></div>
+				<div class="weathercon">
+					<div id="temp"></div><br />
+					<div id="forecast"></div>
+				</div>
 			</div>
 			<div class="bottomleft">
 				<div class="newscon">
