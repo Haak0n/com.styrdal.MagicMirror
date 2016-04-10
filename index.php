@@ -5,6 +5,9 @@
 
 	<head>
 		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+		<script type="text/javascript">
+			var gitHash = '<?php echo trim(`git rev-parse HEAD`) ?>';
+		</script>
 		<title>MirrorApp</title>
 		<link rel="stylesheet" type="text/css" href="main.css" />
 		<link rel="stylesheet" type="text/css" href="css/weather-icons.css">
@@ -44,6 +47,7 @@
 		
 		<script src="js/jquery.js"></script>
 		<script src="js/moment.js"></script>
+		<script src="js/versioncheck.js"></script>
 		<script src="js/config.js"></script>
 		<script src="js/main.js"></script>
 		<script src="js/time.js"></script>
