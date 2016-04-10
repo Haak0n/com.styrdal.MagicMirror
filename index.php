@@ -29,7 +29,11 @@
 				<div id="news"></div>
 			</div>
 			<div class="bottomright">
-				Test Bottomright
+				Calendar goes here<p />
+				
+				Test1<br />
+				Test2<br />
+				Test3
 			</div>
 		</div>
 		
