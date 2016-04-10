@@ -35,14 +35,7 @@
 			</div>
 			<div class="bottomright">
 				<div class="calendarcon">
-					Calendar goes here<p />
-					Test1<br />
-					Test2<br />
-					Test3<br />
-					Test4<br />
-					Test5<br />
-					Test6<br />
-					Test7
+					<div id="calendar"></div>
 				</div>
 			</div>
 		</div>
@@ -55,5 +48,6 @@
 		<script src="js/time.js"></script>
 		<script src="js/weather.js"></script>
 		<script src="js/news.js"></script>
+		<script src="js/calendar.js"></script>
 	</body>
 </html>

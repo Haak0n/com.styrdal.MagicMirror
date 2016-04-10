@@ -81,7 +81,7 @@ body {
 
 .bottomright {
 	border-style: solid;
-	border-width: 1px;
+	border-width: 0px;
 	border-color: #FFFFFF;
 	position: absolute;
 	bottom: 0;
@@ -102,7 +102,7 @@ body {
 
 .calendarcon {
 	border-style: solid;
-	border-width: 1px;
+	border-width: 0px;
 	border-color: #FFFFFF;
 	position: absolute;
 	bottom: 0;
