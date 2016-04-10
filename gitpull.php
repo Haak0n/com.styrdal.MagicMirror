@@ -1,6 +1,6 @@
 <?php 
-shell_exec("scripts/pull");
-echo "Sent git pull?";
+$pull = shell_exec('git pull');
+echo $pull
 ?>
 
 asdasdasd
