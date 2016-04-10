@@ -26,7 +26,9 @@
 				<div id="forecast"></div>
 			</div>
 			<div class="bottomleft">
-				<div id="news"></div>
+				<div class="newscon">
+					<div id="news"></div>
+				</div>
 			</div>
 			<div class="bottomright">
 				Calendar goes here<p />
