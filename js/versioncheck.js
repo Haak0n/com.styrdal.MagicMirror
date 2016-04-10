@@ -1,5 +1,5 @@
 function checkVersion () {
-	$.getJSON('githash.php'. {}, function(json, textStatus) {
+	$.getJSON('githash.php', {}, function(json, textStatus) {
 		if (json) {
 			if (json.gitHash != gitHash) {
 				window.location.reload();
