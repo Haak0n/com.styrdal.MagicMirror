@@ -11,8 +11,21 @@ $temp2 = $row['temp2'];
 
 $date =  $row['date'];
 
+$table = array();
+$table['cols'] = array(
+	array('id' => "A", 'label' => 'Time', 'type' => 'date'),
+	array('id' => "B", 'label' => 'Outside Temperature', 'type' => 'number'),
+	array('id' => "c", 'label' => 'Inside Temperature', 'type' => 'number')
+	);
+	
+$temp = array();
+$temp[] = array('v' => $date);
+$temp[] = array('v' => $row['temp1']);
+$temp[] = array('v' => $row['temp2']);
+$rows[] = array('c' => $temp);
 
-$table = array('temp1' => $temp1, 'temp2' => $temp2, 'date' => $date);
+
+$table['rows'] = $rows;
 $jsontable = json_encode($table);
 
 echo $jsontable;
