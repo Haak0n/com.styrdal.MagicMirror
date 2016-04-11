@@ -52,6 +52,6 @@
 		<script src="js/weather.js"></script>
 		<script src="js/news.js"></script>
 		<script src="js/calendar.js"></script>
-		<script src="js/tempinit.js"></script>
+		<script src="js/temp.js"></script>
 	</body>
 </html>
