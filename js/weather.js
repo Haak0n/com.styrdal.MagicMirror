@@ -42,8 +42,6 @@ updateCurrentWeather = function () {
 		success: function (data) {
 			var temperature = roundValue(data.main.temp);
 			
-			console.log(data);
-			
 			var iconClass = weather.iconTable[data.weather[0].icon];
 			var icon = '<i class="wi ' + iconClass + '"></i>';
 			
