@@ -11,11 +11,10 @@ function tempInit () {
 				temp2 = data.temp,
 				date = data.date;
 			
-			$("#intemp").html(temp1 + "&deg");
+			$("#intemp").html(date + "&deg");
 			$("#outtemp").html(temp2 + "&deg");
 		}
 	});
 	
 	window.setTimeout(tempInit, updateInterval);
 }
-		
