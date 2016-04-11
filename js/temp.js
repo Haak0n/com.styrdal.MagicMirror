@@ -10,7 +10,8 @@ function tempInit () {
 				temp2 = data.temp2,
 				date = data.date;
 			
-			console.log(data):
+			console.log(data);
+			
 			
 			$("#intemp").html(temp1 + "&deg");
 			$("#outtemp").html(temp2 + "&deg");
