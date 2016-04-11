@@ -7,8 +7,8 @@ function tempInit () {
 		datatype: 'json',
 		success: function(data) {
 			console.log(data);
-			var temp1 = data.temp.temp1,
-				temp2 = data.temp.temp2,
+			var temp1 = data.temp,
+				temp2 = data.temp,
 				date = data.date;
 			
 			$("#intemp").html(temp1 + "&deg");
