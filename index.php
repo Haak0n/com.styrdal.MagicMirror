@@ -26,8 +26,14 @@
 			</div>
 			<div class="topright">
 				<div class="weathercon">
-					<div id="temp"></div><br />
-					<div id="intemp"></div><div id="outtemp"></div><br />
+					<div id="temp"></div>
+					<div id="tempread">
+						<table>
+							<tr>
+								<td>In:</td><td id="intemp"></td><td>Out:</td><td id="outtemp"></td>
+							</tr>
+						</table>
+					</div>
 					<div id="forecast"></div>
 				</div>
 			</div>
