@@ -41,6 +41,7 @@ updateCurrentWeather = function () {
 		data: weather.params,
 		success: function (data) {
 			var temperature = roundValue(data.main.temp);
+			console.log(data.main.temp);
 			
 			var iconClass = weather.iconTable[data.weather[0].icon];
 			var icon = '<i class="wi ' + iconClass + '"></i>';
@@ -67,19 +68,24 @@ updateForecast = function () {
 				forecastRow1 = '<tr>',
 				forecastRow2 = '',
 				forecastRow3 = '',
+				forecastRow4 = '',
 				opacity = 1;
 				
 			for (var i = 0, count = data.list.length; i < count; i++) {
 				var forecast = data.list[i];
 				
+				var forecastIcon = weather.iconTable[forecast.weather[0].icon];
+				
+				
 				var _12hours = 60 * 60 * 12 * 1000;
 				if (forecast.dt < Math.floor((Date.now() - _12hours) / 1000)) continue;
 				
 				forecastRow1 = '<td style="opacity:' + opacity + '" class="day">' + moment(forecast.dt, 'X').format('ddd') + '</td>';
-				forecastRow2 = '<td style="opacity:' + opacity + '" class="temp-max">' + roundValue(forecast.temp.max) + '</td>';
-				forecastRow3 = '<td style="opacity:' + opacity + '" class="temp-min">' + roundValue(forecast.temp.min) + '</td>';
+				forecastRow2 = '<td style="opacity:' + opacity + '" class="wi ' + forecastIcon + '"></td>';
+				forecastRow3 = '<td style="opacity:' + opacity + '" class="temp-max">' + roundValue(forecast.temp.max) + '&deg</td>';
+				forecastRow4 = '<td style="opacity:' + opacity + '" class="temp-min">' + roundValue(forecast.temp.min) + '&deg</td>';
 				
-				forecastHtml += forecastRow1 + forecastRow2 + forecastRow3 + '</tr>';
+				forecastHtml += forecastRow1 + forecastRow2 + forecastRow3 + forecastRow4 + '</tr>';
 				
 				opacity -= 0.155;
 			}

@@ -2,7 +2,6 @@ var key = 'AIzaSyBCoouCCaQIQ7VDY_cAsEqhetmOr50p5Bk';
 var userName = 'styrdal@gmail.com';
 var limit = 6;
 var updateInterval = 60 * 1000;
-console.log("Hej");
 
 function calendarInit() {
 	var date = moment().format("YYYY-MM-DDTHH:mm:ss") + '%2B02:00';
@@ -11,18 +10,22 @@ function calendarInit() {
 	var eventDate = '';
 	var html = '<table class=calendar>';
 	var opacity = 1;
-	console.log(url);
 	
 	$.getJSON(url, function(data) {
 		for (var i=0; i < limit; i++) {
 			item = data['items'][i];
 			
 			eventTopic = item.summary;
-			eventDate = moment(item.start.dateTime).format("DD/MM");
-			eventTime = moment(item.start.dateTime).format("HH:mm");
+			eventTimeStamp = moment(item.start.dateTime)
+			eventDate = eventTimeStamp.format("DD/MM");
+			eventTime = eventTimeStamp.format("HH:mm");
+			eventDay = eventTimeStamp.format("ddd");
 			
 			
-			html += '<tr><td style="opacity:' + opacity + '" class="eventdate">' + eventDate + '</td><td style="opacity:' + opacity + '" class="eventtopic">' + eventTopic + '</td><td style="opacity:' + opacity + '" class="eventtime">' + eventTime + '</td></tr>';
+			html += '<tr><td style="opacity:' + opacity + '" class="eventday">' + eventDay + '</td>';
+			html += '<td style="opacity:' + opacity + '" class="eventdate">' + eventDate + '</td>';
+			html += '<td style="opacity:' + opacity + '" class="eventtopic">' + eventTopic + '</td>';
+			html += '<td style="opacity:' + opacity + '" class="eventtime">' + eventTime + '</td></tr>';
 			opacity -= 0.155;
 		}
 		html += '</table>';
