@@ -6,8 +6,8 @@ function tempInit () {
 		url: 'gettemp.php',
 		datatype: 'json',
 		success: function(data) {
-			var temp1 = data.temp1,
-				temp2 = data.temp2,
+			var temp1 = data.temp.temp1,
+				temp2 = data.temp.temp2,
 				date = data.date;
 			
 			console.log(data);
