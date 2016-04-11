@@ -27,7 +27,7 @@
 			<div class="topright">
 				<div class="weathercon">
 					<div id="temp"></div>
-					<div id="tempread">
+					<div class="tempread">
 						<table>
 							<tr>
 								<td>In:</td><td id="intemp"></td><td>Out:</td><td id="outtemp"></td>

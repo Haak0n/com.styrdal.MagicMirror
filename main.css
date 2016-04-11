@@ -115,6 +115,10 @@ body {
 	right: 0;
 }
 
+.tempread {
+	font-size: 9px;
+}
+
 .topic {
 	font-size: 11px;
 }
