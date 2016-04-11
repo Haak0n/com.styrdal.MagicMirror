@@ -10,12 +10,12 @@ $temp1 = $row['temp1'];
 $temp2 = $row['temp2'];
 
 $date = date_parse_from_format("j/mY H:i:s", $row['date']);
-$year = $dateparse['year'];
-$month = $dateparse['month'] - 1;
-$day = $dateparse['day'];
-$hour = $dateparse['hour'];
-$minute = $dateparse['minute'];
-$second = $dateparse['second'];
+$year = $date['year'];
+$month = $date['month'] - 1;
+$day = $date['day'];
+$hour = $date['hour'];
+$minute = $date['minute'];
+$second = $date['second'];
 
 
 $table = array('temp1' => $temp1, 'temp2' => $temp2, 'date' => $date);
