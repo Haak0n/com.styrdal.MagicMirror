@@ -6,5 +6,4 @@ $(document).ready(function() {
 	calendarInit();
 	checkVersion();
 	tempInit();
-	a
 });
