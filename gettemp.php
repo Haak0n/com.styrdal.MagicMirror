@@ -18,4 +18,5 @@ $table['date'] = $date;
 $jsontable = json_encode($table);
 
 echo $jsontable;
+$db->close();
 ?>
