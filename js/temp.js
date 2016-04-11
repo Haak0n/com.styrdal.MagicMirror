@@ -7,7 +7,6 @@ function tempInit () {
 		datatype: 'json',
 		success: function(data) {
 			data = JSON.parse(data);
-			console.log(data);
 			var temp1 = parseFloat(data.temp.temp1).toFixed(1),
 				temp2 = parseFloat(data.temp.temp2).toFixed(1),
 				date = data.date;
