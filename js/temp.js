@@ -7,12 +7,12 @@ function tempInit () {
 		datatype: 'json',
 		success: function(data) {
 			data = JSON.parse(data);
-			var temp1 = parseFloat(data.temp.temp1).toFixed(1),
-				temp2 = parseFloat(data.temp.temp2).toFixed(1),
+			var inTemp = parseFloat(data.temp.in).toFixed(1),
+				outTemp = parseFloat(data.temp.out).toFixed(1),
 				date = data.date;
 			
-			$("#intemp").html(temp1 + "&deg");
-			$("#outtemp").html(temp2 + "&deg");
+			$("#intemp").html(inTemp + "&deg");
+			$("#outtemp").html(outTemp + "&deg");
 		}
 	});
 	
