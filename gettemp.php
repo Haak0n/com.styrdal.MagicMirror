@@ -12,7 +12,7 @@ $temp2 = $row['temp2'];
 $date =  $row['date'];
 
 
-$table = array(temp1 => $temp1, temp2 => $temp2, date => $date);
+$table = array('temp1' => $temp1, 'temp2' => $temp2, 'date' => $date);
 $jsontable = json_encode($table);
 
 echo $jsontable;
