@@ -3,7 +3,7 @@ $filename = "/home/pi/tempsens/templog";
 $db = new SQLite3($filename) or die('Unable to open database');
 
 $sql = "SELECT temp1, temp2, date FROM templog ORDER BY rowid LIMIT 1";
-$req = $db->query($sql);
+$ret = $db->query($sql);
 $row = $ret->fetchArray(SQLITE3_ASSOC);
 
 $temp1 = $row['temp1'];
