@@ -27,6 +27,7 @@
 			<div class="topright">
 				<div class="weathercon">
 					<div id="temp"></div><br />
+					<div id="intemp"></div><div id="outtemp"></div><br />
 					<div id="forecast"></div>
 				</div>
 			</div>
@@ -51,5 +52,6 @@
 		<script src="js/weather.js"></script>
 		<script src="js/news.js"></script>
 		<script src="js/calendar.js"></script>
+		<script src="js/tempinit.js"></script>
 	</body>
 </html>
