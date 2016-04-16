@@ -15,6 +15,12 @@ function calendarInit() {
 		for (var i=0; i < limit; i++) {
 			item = data['items'][i];
 			
+			item.sort(function(a,b){
+				// Turn your strings into dates, and then subtract them
+				// to get a value that is either negative, positive, or zero.
+				return new Date(b.date) - new Date(a.date);
+			});
+			
 			eventTopic = item.summary;
 			eventTimeStamp = moment(item.start.dateTime)
 			eventDate = eventTimeStamp.format("DD/MM");
