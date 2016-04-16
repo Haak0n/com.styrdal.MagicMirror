@@ -5,7 +5,7 @@ var updateInterval = 60 * 1000;
 
 function calendarInit() {
 	var date = moment().format("YYYY-MM-DDTHH:mm:ss") + '%2B02:00';
-	var url = 'https://www.googleapis.com/calendar/v3/calendars/' + userName + '/events?key=' + key + '&maxResults=' + limit + '&timeMin=' + date;
+	var url = 'https://www.googleapis.com/calendar/v3/calendars/' + userName + '/events?key=' + key + '&maxResults=' + limit + '&timeMin=' + date + '&singleEvents=True&orderBy=startTime';
 	var topic = '';
 	var eventDate = '';
 	var html = '<table class=calendar>';
@@ -14,12 +14,6 @@ function calendarInit() {
 	$.getJSON(url, function(data) {
 		for (var i=0; i < limit; i++) {
 			item = data['items'][i];
-			
-			item.sort(function(a,b){
-				// Turn your strings into dates, and then subtract them
-				// to get a value that is either negative, positive, or zero.
-				return new Date(b.date) - new Date(a.date);
-			});
 			
 			eventTopic = item.summary;
 			eventTimeStamp = moment(item.start.dateTime)
